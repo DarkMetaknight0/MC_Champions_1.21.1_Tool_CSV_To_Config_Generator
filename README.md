@@ -11,4 +11,4 @@ config/champions_entities - listing individual filtered affixes etc. per allowed
 data\champions\tags\entity_type/allow_champions.json - The list of allowed champions. (First column of CSV is the mob ID) Intended to be put into a data pack. (See: [Creating a Datapack](https://minecraft.wiki/w/Tutorial:Creating_a_data_pack))
 
 # Overrides in code
-Supports overriding max rank for specific mobs. By default this is Silverfish and a couple other possible on-death spawns limited to rank 2 maximum.
+Supports overriding max rank for specific mobs. By default this is Silverfish and a couple other possible on-death spawns, and some summons like a Vex limited to rank 2 maximum. These will not impact the list itself; only the max rank specific IDs will map to, essentially overriding them through code rather than needing any "hard coding" in the spreadsheet.

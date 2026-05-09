@@ -1,2 +1,2 @@
-# MC_Champions_1.21.1_Tool_CSV_To_Config_Generator
-A simple Java tool for the Champions mod that generates configurations given a CSV file.
+# GO TO MASTER BRANCH TO SEE THE CODE.
+I dunno why this is the main branch, not sure how to change it and I will do so when I have more time lol

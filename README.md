@@ -5,5 +5,10 @@ CSV file is in resources. It's only using Java, Maven, and Lombok so use any IDE
 
 # Generated files given CSV
 Outside the project folder, you'll find:
+
 config/champions_entities - listing individual filtered affixes etc. per allowed mob.
+
 data\champions\tags\entity_type/allow_champions.json - The list of allowed champions. (First column of CSV is the mob ID) Intended to be put into a data pack. (See: [Creating a Datapack](https://minecraft.wiki/w/Tutorial:Creating_a_data_pack))
+
+# Overrides in code
+Supports overriding max rank for specific mobs. By default this is Silverfish and a couple other possible on-death spawns limited to rank 2 maximum.

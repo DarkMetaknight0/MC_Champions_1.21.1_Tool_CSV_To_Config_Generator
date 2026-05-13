@@ -1,7 +1,9 @@
 # MC_Champions_1.21.1_Tool_CSV_To_Config_Generator
 A simple Java tool for the Champions mod that generates configurations given a CSV file. I recommend using another program like Google Sheets alongside this app to manage your Champions configs more easily.
 
-CSV file is in resources. It's only using Java, Maven, and Lombok so use any IDE that supports all three (like intelliJ) and you're golden. Put the CSV in resources (it comes with an example; starts pulling data at row 6+ to give room for headers, math based fields etc.)
+CSV file is in resources. Export the mobs sheet and boss sheets. Then copy the contents needed into the CSV in the resources directory.
+
+It's only using Java, Maven, and Lombok so use any IDE that supports all three (like intelliJ) and you're golden. Put the CSV in resources (it comes with an example; starts pulling data at row 6+ to give room for headers, math based fields etc.)
 
 # Generated files given CSV
 Outside the project folder after generating, you'll find:

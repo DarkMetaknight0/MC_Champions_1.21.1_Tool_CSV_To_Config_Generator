@@ -1,0 +1,245 @@
+Data Entry Fields,Fields to Export,,,,,,,,,TIER CALCULATION SECTION,,,,,,,
+,,,,,,,,,,Global MAX HP:,450,Anything above this limit will show as red text,,,,,
+,,,,,,,,,,Global Armor Reduction per point:,0.04,Base MC setting is 0.04,,,,,
+Section to Export as JSON Format,,,,,,,,,,,Global Tiers:,0,1,2,3,4,5
+,Hard-coded to 0,from tier calc. section,,,,,,,,list used to calc single maxTier field,Armor Addition (Per Tier):,0,2,4,6,8,14
+entity,minTier,maxTier,presetAffixes,affixList,affixPermission,HP,Armor,Poison Immunity?,Notes,maxTier(s) list,HP & Atk Stat multiplier (per Tier):,1,1,2,3,5,7
+minecraft:blaze,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+minecraft:bogged,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,,,5,,16,17.28,37.12,59.52,105.6,174.72
+minecraft:breeze,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,,,5,,30,32.4,69.6,111.6,198,327.6
+minecraft:cave_spider,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,0,,,5,,12,12.96,27.84,44.64,79.2,131.04
+minecraft:creeper,0,5,,"champions:knocking, champions:wounding, champions:paralyzing, champions:molten, champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+minecraft:drowned,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,,,5,,21.6,23.2,49.6,79.2,140,229.6
+minecraft:elder_guardian,0,3,,"champions:plagued, champions:reflective",BLACKLIST,80,0,,,3,,80,86.4,185.6,297.6,528,873.6
+minecraft:enderman,0,5,,"champions:plagued, champions:reflective",BLACKLIST,40,0,,,5,,40,43.2,92.8,148.8,264,436.8
+minecraft:endermite,0,5,,"champions:plagued, champions:reflective",BLACKLIST,8,0,,,5,,8,8.64,18.56,29.76,52.8,87.36
+minecraft:evoker,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,,,5,,24,25.92,55.68,89.28,158.4,262.08
+minecraft:ghast,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,,,5,,10,10.8,23.2,37.2,66,109.2
+minecraft:giant,0,3,,"champions:plagued, champions:reflective",BLACKLIST,100,0,,,3,,100,108,232,372,660,1092
+minecraft:guardian,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,,,5,,30,32.4,69.6,111.6,198,327.6
+minecraft:husk,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,,,5,,21.6,23.2,49.6,79.2,140,229.6
+minecraft:illusioner,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,0,,,5,,32,34.56,74.24,119.04,211.2,349.44
+minecraft:magma_cube,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,,,5,,16,17.28,37.12,59.52,105.6,174.72
+minecraft:phantom,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+minecraft:piglin,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,,,5,,16,17.28,37.12,59.52,105.6,174.72
+minecraft:piglin_brute,0,4,,"champions:plagued, champions:reflective",BLACKLIST,50,0,,,4,,50,54,116,186,330,546
+minecraft:pillager,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,,,5,,24,25.92,55.68,89.28,158.4,262.08
+minecraft:ravager,0,3,,"champions:plagued, champions:reflective",BLACKLIST,100,0,,,3,,100,108,232,372,660,1092
+minecraft:shulker,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,,,5,,30,32.4,69.6,111.6,198,327.6
+minecraft:silverfish,0,5,,"champions:plagued, champions:infested, champions:reflective",BLACKLIST,8,0,,Set to 2; possible summon,5,,8,8.64,18.56,29.76,52.8,87.36
+minecraft:skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+minecraft:slime,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,,,5,,16,17.28,37.12,59.52,105.6,174.72
+minecraft:spider,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,,,5,,16,17.28,37.12,59.52,105.6,174.72
+minecraft:stray,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+minecraft:vex,0,5,,"champions:plagued, champions:reflective",BLACKLIST,14,0,,"Set to 2, summon",5,,14,15.12,32.48,52.08,92.4,152.88
+minecraft:vindicator,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,,,5,,24,25.92,55.68,89.28,158.4,262.08
+minecraft:witch,0,5,,"champions:plagued, champions:reflective",BLACKLIST,26,0,,,5,,26,28.08,60.32,96.72,171.6,283.92
+minecraft:wither_skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+minecraft:zoglin,0,5,,"champions:plagued, champions:reflective",BLACKLIST,40,0,,,5,,40,43.2,92.8,148.8,264,436.8
+minecraft:zombie,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,,,5,,21.6,23.2,49.6,79.2,140,229.6
+minecraft:zombie_villager,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,,,5,,21.6,23.2,49.6,79.2,140,229.6
+minecraft:zombified_piglin,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,,,5,,21.6,23.2,49.6,79.2,140,229.6
+alexsmobs:alligator_snapping_turtle,0,5,,"champions:plagued,champions:reflective",BLACKLIST,18,8,N,Not aggressive. Neutral,5,,23.76,25.2,53.28,84.24,147.6,236.88
+alexsmobs:bone_serpent,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,0,N,,5,,25,27,58,93,165,273
+alexsmobs:crimson_mosquito,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,N,,5,,10,10.8,23.2,37.2,66,109.2
+alexsmobs:centipede_head,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,6,N,,5,,12.4,13.2,28,44.4,78,126
+alexsmobs:dropbear,0,5,,"champions:plagued, champions:reflective",BLACKLIST,22,0,N,,5,,22,23.76,51.04,81.84,145.2,240.24
+alexsmobs:mimicube,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,N,,5,,30,32.4,69.6,111.6,198,327.6
+alexsmobs:murmur,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,Y,,5,,30,32.4,69.6,111.6,198,327.6
+alexsmobs:skelewag,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,Y,,5,,20,21.6,46.4,74.4,132,218.4
+alexsmobs:skreecher,0,5,,"champions:plagued, champions:reflective",BLACKLIST,2,0,N,,5,,2,2.16,4.64,7.44,13.2,21.84
+alexsmobs:soul_vulture,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,0,Y,,5,,12,12.96,27.84,44.64,79.2,131.04
+alexsmobs:straddler,0,5,,"champions:plagued, champions:reflective",BLACKLIST,28,5,N,,5,,33.6,35.84,76.16,120.96,212.8,344.96
+alexsmobs:guster,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,N,,5,,16,17.28,37.12,59.52,105.6,174.72
+alexsmobs:rocky_roller,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,20,N,,5,,18,18.8,39.2,61.2,106,165.2
+alexscaves:boundroid,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,20,N,,5,,36,37.6,78.4,122.4,212,330.4
+alexscaves:brainiac,0,4,,"champions:plagued, champions:reflective",BLACKLIST,40,8,N,,4,,52.8,56,118.4,187.2,328,526.4
+alexscaves:ferrouslime,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,N,,5,,20,21.6,46.4,74.4,132,218.4
+alexscaves:magnetron,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,6,N,,5,,37.2,39.6,84,133.2,234,378
+alexscaves:mine_guardian,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,N,,5,,20,21.6,46.4,74.4,132,218.4
+alexscaves:teletor,0,5,,"champions:plagued, champions:reflective",BLACKLIST,18,0,N,,5,,18,19.44,41.76,66.96,118.8,196.56
+alexscaves:underzealot,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,N,,5,,20,21.6,46.4,74.4,132,218.4
+alexscaves:watcher,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,Y,,5,,30,32.4,69.6,111.6,198,327.6
+alexscaves:corrodent,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,2,N,,5,,17.28,18.56,39.68,63.36,112,183.68
+alexscaves:vesper,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,N,,5,,16,17.28,37.12,59.52,105.6,174.72
+alexscaves:caniac,0,5,,"champions:plagued, champions:reflective",BLACKLIST,38,0,Y,,5,,38,41.04,88.16,141.36,250.8,414.96
+alexscaves:caramel_cube,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,N,,5,,16,17.28,37.12,59.52,105.6,174.72
+alexscaves:gingerbread_man,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,N,,5,,10,10.8,23.2,37.2,66,109.2
+alexscaves:gumbeeper,0,5,,"champions:plagued, champions:reflective",BLACKLIST,14,4,N,,5,,16.24,17.36,36.96,58.8,103.6,168.56
+alexscaves:licowitch,0,5,,"champions:plagued, champions:reflective",BLACKLIST,40,0,N,Infrequent summon Gummy Bear w/ 36hp,5,,40,43.2,92.8,148.8,264,436.8
+born_in_chaos_v1:senor_pumpkin,0,5,,"champions:plagued, champions:reflective",BLACKLIST,35,2,,,5,,37.8,40.6,86.8,138.6,245,401.8
+born_in_chaos_v1:mr_pumpkin,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,0,,Frequently summoned by Sir Pumpkinhead,5,,12,12.96,27.84,44.64,79.2,131.04
+born_in_chaos_v1:sir_pumpkinhead_without_horse,0,2,,"champions:plagued, champions:reflective",BLACKLIST,120,4,,,2,,139.2,148.8,316.8,504,888,1444.8
+born_in_chaos_v1:felsteed,0,4,,"champions:plagued, champions:reflective",BLACKLIST,60,2,,,4,,64.8,69.6,148.8,237.6,420,688.8
+born_in_chaos_v1:sir_the_headless,0,3,,"champions:plagued, champions:reflective",BLACKLIST,70,4,,,3,,81.2,86.8,184.8,294,518,842.8
+born_in_chaos_v1:krampus_henchman,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,5,,,5,,36,38.4,81.6,129.6,228,369.6
+born_in_chaos_v1:seared_spirit,0,4,,"champions:plagued, champions:reflective",BLACKLIST,50,3,,,4,,56,60,128,204,360,588
+born_in_chaos_v1:spiritof_chaos,0,5,,"champions:plagued, champions:reflective",BLACKLIST,15,0,,,5,,15,16.2,34.8,55.8,99,163.8
+born_in_chaos_v1:dark_vortex,0,5,,"champions:plagued, champions:reflective",BLACKLIST,35,0,,,5,,35,37.8,81.2,130.2,231,382.2
+born_in_chaos_v1:phantom_creeper,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+born_in_chaos_v1:scarlet_persecutor,0,5,,"champions:plagued, champions:reflective",BLACKLIST,35,0,,,5,,35,37.8,81.2,130.2,231,382.2
+born_in_chaos_v1:restless_spirit,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,,,5,,24,25.92,55.68,89.28,158.4,262.08
+born_in_chaos_v1:corpse_fish,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,0,,,5,,12,12.96,27.84,44.64,79.2,131.04
+born_in_chaos_v1:firelight,0,5,,"champions:plagued, champions:reflective",BLACKLIST,15,0,,,5,,15,16.2,34.8,55.8,99,163.8
+born_in_chaos_v1:baby_spider,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,1,,Summoned by Spiders Mother,5,,10.4,11.2,24,38.4,68,112
+born_in_chaos_v1:mother_spider,0,3,,"champions:plagued, champions:reflective",BLACKLIST,90,0,,,3,,90,97.2,208.8,334.8,594,982.8
+born_in_chaos_v1:dread_hound,0,5,,"champions:plagued, champions:reflective",BLACKLIST,17,0,,Summoned by Dire Hound Leader,5,,17,18.36,39.44,63.24,112.2,185.64
+born_in_chaos_v1:dire_hound_leader,0,3,,"champions:plagued, champions:reflective",BLACKLIST,100,0,,,3,,100,108,232,372,660,1092
+born_in_chaos_v1:glutton_fish,0,3,,"champions:plagued, champions:reflective",BLACKLIST,90,3,,,3,,100.8,108,230.4,367.2,648,1058.4
+born_in_chaos_v1:zombie_bruiser,0,4,,"champions:plagued, champions:reflective",BLACKLIST,60,2,,,4,,64.8,69.6,148.8,237.6,420,688.8
+born_in_chaos_v1:fallen_chaos_knight,0,4,,"champions:plagued, champions:reflective",BLACKLIST,40,20,,,4,,72,75.2,156.8,244.8,424,660.8
+born_in_chaos_v1:maggot,0,5,,"champions:plagued, champions:reflective",BLACKLIST,6,0,,"Spawned from Undead dying, in groups of 2",5,,6,6.48,13.92,22.32,39.6,65.52
+born_in_chaos_v1:corpse_fly,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,,Spawned from Swarmers taking damage.,5,,10,10.8,23.2,37.2,66,109.2
+born_in_chaos_v1:bloody_gadfly,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,,,5,,20,21.6,46.4,74.4,132,218.4
+born_in_chaos_v1:diamond_termite,0,5,,"champions:plagued, champions:reflective",BLACKLIST,14,7,,,5,,17.92,19.04,40.32,63.84,112,180.32
+born_in_chaos_v1:zombie_lumberjack,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,4,,,5,,29,31,66,105,185,301
+born_in_chaos_v1:zombie_fisherman,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,4,,,5,,29,31,66,105,185,301
+born_in_chaos_v1:zombie_clown,0,5,,"champions:plagued, champions:reflective",BLACKLIST,35,4,,,5,,40.6,43.4,92.4,147,259,421.4
+born_in_chaos_v1:door_knight,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,7,,,5,,38.4,40.8,86.4,136.8,240,386.4
+born_in_chaos_v1:barrel_zombie,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,6,,,5,,37.2,39.6,84,133.2,234,378
+born_in_chaos_v1:decaying_zombie,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,,,5,,30,32.4,69.6,111.6,198,327.6
+born_in_chaos_v1:baby_skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,1,,Summoned by Bonescaller,5,,10.4,11.2,24,38.4,68,112
+born_in_chaos_v1:bone_imp,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,3,,Summoned by Supreme Bonescaller,5,,22.4,24,51.2,81.6,144,235.2
+born_in_chaos_v1:siamese_skeletons,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,,,5,,21.6,23.2,49.6,79.2,140,229.6
+born_in_chaos_v1:siamese_skeletonsright,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,2,,,5,,10.8,11.6,24.8,39.6,70,114.8
+born_in_chaos_v1:siamese_skeletonsleft,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,2,,,5,,10.8,11.6,24.8,39.6,70,114.8
+born_in_chaos_v1:skeleton_thrasher,0,4,,"champions:plagued, champions:reflective",BLACKLIST,50,7,,,4,,64,68,144,228,400,644
+born_in_chaos_v1:bonescaller,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,1,,,5,,26,28,60,96,170,280
+born_in_chaos_v1:supreme_bonescaller,0,3,,"champions:plagued, champions:reflective",BLACKLIST,65,5,,,3,,78,83.2,176.8,280.8,494,800.8
+born_in_chaos_v1:spirit_guide,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,2,,,5,,34.56,37.12,79.36,126.72,224,367.36
+born_in_chaos_v1:spirit_guide_assistant,0,5,,"champions:plagued, champions:reflective",BLACKLIST,15,3,,Summoned by Spirit Guide,5,,16.8,18,38.4,61.2,108,176.4
+born_in_chaos_v1:decrepit_skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,15,1,,,5,,15.6,16.8,36,57.6,102,168
+born_in_chaos_v1:skeleton_demoman,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,0,,,5,,25,27,58,93,165,273
+cataclysm:urchinkin,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,0,N,,5,,12,12.96,27.84,44.64,79.2,131.04
+cataclysm:draugr,0,5,,"champions:plagued, champions:reflective",BLACKLIST,28,3,Y,,5,,31.36,33.6,71.68,114.24,201.6,329.28
+cataclysm:deepling,0,5,,"champions:plagued, champions:reflective",BLACKLIST,26,0,N,,5,,26,28.08,60.32,96.72,171.6,283.92
+cataclysm:deepling_angler,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,N,"Has a fish minion, but doesn’t summon a buncha things",5,,30,32.4,69.6,111.6,198,327.6
+cataclysm:deepling_priest,0,4,,"champions:plagued, champions:reflective",BLACKLIST,45,0,N,,4,,45,48.6,104.4,167.4,297,491.4
+cataclysm:deepling_warlock,0,4,,"champions:plagued, champions:reflective",BLACKLIST,45,0,N,,4,,45,48.6,104.4,167.4,297,491.4
+cataclysm:deepling_brute,0,3,,"champions:plagued, champions:reflective",BLACKLIST,60,8,N,,3,,79.2,84,177.6,280.8,492,789.6
+cataclysm:endermaptera,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,6,N,,5,,19.84,21.12,44.8,71.04,124.8,201.6
+cataclysm:elite_draugr,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,3,Y,,5,,35.84,38.4,81.92,130.56,230.4,376.32
+cataclysm:lionfish,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,0,N,,5,,12,12.96,27.84,44.64,79.2,131.04
+cataclysm:symbiocto,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,0,N,,5,,16,17.28,37.12,59.52,105.6,174.72
+cataclysm:royal_draugr,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,5,Y,,5,,36,38.4,81.6,129.6,228,369.6
+cataclysm:koboleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,0,Y,,5,,25,27,58,93,165,273
+cataclysm:the_watcher,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,5,N,,5,,30,32,68,108,190,308
+eidolon_repraised:zombie_brute,0,4,,"champions:plagued, champions:reflective",BLACKLIST,40,6,Y,,4,,49.6,52.8,112,177.6,312,504
+eidolon_repraised:giant_skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,Y,,5,,20,21.6,46.4,74.4,132,218.4
+eidolon_repraised:necromancer,0,4,,"champions:plagued, champions:reflective",BLACKLIST,50,0,Y,Summons Goons,4,,50,54,116,186,330,546
+eidolon_repraised:wraith,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,Y,,5,,20,21.6,46.4,74.4,132,218.4
+illagerinvasion:alchemist,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,Y,,5,,24,25.92,55.68,89.28,158.4,262.08
+illagerinvasion:archivist,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,N,,5,,24,25.92,55.68,89.28,158.4,262.08
+illagerinvasion:basher,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,0,N,,5,,32,34.56,74.24,119.04,211.2,349.44
+illagerinvasion:firecaller,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,0,N,,5,,32,34.56,74.24,119.04,211.2,349.44
+minecraft:illusioner,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,0,N,,5,,32,34.56,74.24,119.04,211.2,349.44
+illagerinvasion:surrendered,0,5,,"champions:plagued, champions:reflective",BLACKLIST,14,0,N,,5,,14,15.12,32.48,52.08,92.4,152.88
+illagerinvasion:marauder,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,N,,5,,24,25.92,55.68,89.28,158.4,262.08
+illagerinvasion:necromancer,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,0,N,has summons,5,,32,34.56,74.24,119.04,211.2,349.44
+illagerinvasion:provoker,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,N,,5,,24,25.92,55.68,89.28,158.4,262.08
+illagerinvasion:sorcerer,0,5,,"champions:plagued, champions:reflective",BLACKLIST,32,0,N,,5,,32,34.56,74.24,119.04,211.2,349.44
+mowziesmobs:elokosa_howler,0,5,,"champions:plagued, champions:reflective",BLACKLIST,3,0,N,,5,,3,3.24,6.96,11.16,19.8,32.76
+mowziesmobs:elokosa_follower_howler,0,5,,"champions:plagued, champions:reflective",BLACKLIST,3,0,N,,5,,3,3.24,6.96,11.16,19.8,32.76
+mowziesmobs:foliaath,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,N,,5,,10,10.8,23.2,37.2,66,109.2
+mowziesmobs:naga,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,N,not attacking guards?,5,,30,32.4,69.6,111.6,198,327.6
+mowziesmobs:umvuthana,0,5,,"champions:plagued, champions:reflective",BLACKLIST,8,1,N,,5,,8.32,8.96,19.2,30.72,54.4,89.6
+mowziesmobs:umvuthana_raptor,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,1,N,has 8hp 1 def minions,5,,10.4,11.2,24,38.4,68,112
+mowziesmobs:umvuthana_crane,0,5,,"champions:plagued, champions:reflective",BLACKLIST,12,1,N,,5,,12.48,13.44,28.8,46.08,81.6,134.4
+occultism:possessed_blaze,0,4,,"champions:plagued, champions:reflective",BLACKLIST,67,0,N,,4,,67,72.36,155.44,249.24,442.2,731.64
+occultism:possessed_enderman,0,5,,"champions:plagued, champions:reflective",BLACKLIST,40,0,N,,5,,40,43.2,92.8,148.8,264,436.8
+occultism:possessed_endermite,0,5,,"champions:plagued, champions:reflective",BLACKLIST,8,0,N,,5,,8,8.64,18.56,29.76,52.8,87.36
+occultism:possessed_ghast,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,N,,5,,10,10.8,23.2,37.2,66,109.2
+occultism:possessed_phantom,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,Y,,5,,21.6,23.2,49.6,79.2,140,229.6
+occultism:possessed_shulker,0,5,,"champions:plagued, champions:reflective",BLACKLIST,40,0,N,,5,,40,43.2,92.8,148.8,264,436.8
+occultism:possessed_skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,0,Y,,5,,30,32.4,69.6,111.6,198,327.6
+occultism:possessed_weak_shulker,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,N,,5,,10,10.8,23.2,37.2,66,109.2
+occultism:wild_horde_creeper,0,5,,"champions:plagued, champions:reflective",BLACKLIST,5,20,N,,5,,9,9.4,19.6,30.6,53,82.6
+occultism:wild_horde_drowned,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,10,Y,,5,,42,44.4,93.6,147.6,258,411.6
+occultism:wild_horde_husk,0,5,,"champions:plagued, champions:reflective",BLACKLIST,30,10,Y,,5,,42,44.4,93.6,147.6,258,411.6
+occultism:wild_horde_silverfish,0,5,,"champions:plagued, champions:reflective",BLACKLIST,8,0,N,,5,,8,8.64,18.56,29.76,52.8,87.36
+occultism:wild_hunt_skeleton,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,Y,,5,,20,21.6,46.4,74.4,132,218.4
+occultism:wild_hunt_wither_skeleton,0,4,,"champions:plagued, champions:reflective",BLACKLIST,60,0,Y,has some 20hp goons,4,,60,64.8,139.2,223.2,396,655.2
+occultism:possessed_evoker,0,4,,"champions:plagued, champions:reflective",BLACKLIST,42,7,N,has summons,4,,53.76,57.12,120.96,191.52,336,540.96
+the_bumblezone:beehemoth,0,5,,"champions:plagued, champions:reflective",BLACKLIST,40,0,N,didn't attack guards?,5,,40,43.2,92.8,148.8,264,436.8
+quark:forgotten,0,4,,"champions:plagued, champions:reflective",BLACKLIST,60,1,N,,4,,62.4,67.2,144,230.4,408,672
+quark:foxhound,0,5,,"champions:plagued, champions:reflective",BLACKLIST,8,0,N,,5,,8,8.64,18.56,29.76,52.8,87.36
+quark:wraith,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,N,,5,,20,21.6,46.4,74.4,132,218.4
+rottencreatures:burned,0,5,,"champions:plagued, champions:reflective",BLACKLIST,22,4,N,,5,,25.52,27.28,58.08,92.4,162.8,264.88
+rottencreatures:dead_beard,0,3,,"champions:plagued, champions:reflective",BLACKLIST,70,2,N,has minions,3,,75.6,81.2,173.6,277.2,490,803.6
+rottencreatures:frostbitten,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,2,N,,5,,21.6,23.2,49.6,79.2,140,229.6
+rottencreatures:glacial_hunter,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,4,N,,5,,23.2,24.8,52.8,84,148,240.8
+rottencreatures:hunter_wolf,0,5,,"champions:plagued, champions:reflective",BLACKLIST,8,0,N,didn't attack guards?,5,,8,8.64,18.56,29.76,52.8,87.36
+rottencreatures:immortal,0,5,,"champions:plagued, champions:reflective",BLACKLIST,25,2,N,,5,,27,29,62,99,175,287
+rottencreatures:mummy,0,5,,"champions:plagued, champions:reflective",BLACKLIST,26,2,N,comes with scarab goons,5,,28.08,30.16,64.48,102.96,182,298.48
+rottencreatures:scarab,0,5,,"champions:plagued, champions:reflective",BLACKLIST,10,0,N,Summon: Make max rank 2,5,,10,10.8,23.2,37.2,66,109.2
+rottencreatures:skeleton_lackey,0,5,,"champions:plagued, champions:reflective",BLACKLIST,18,0,N,,5,,18,19.44,41.76,66.96,118.8,196.56
+rottencreatures:swampy,0,5,,"champions:plagued, champions:reflective",BLACKLIST,16,2,Y,,5,,17.28,18.56,39.68,63.36,112,183.68
+rottencreatures:undead_miner,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,2,N,,5,,25.92,27.84,59.52,95.04,168,275.52
+rottencreatures:zap,0,5,,"champions:plagued, champions:reflective",BLACKLIST,22,2,N,,5,,23.76,25.52,54.56,87.12,154,252.56
+rottencreatures:zombie_lackey,0,5,,"champions:plagued, champions:reflective",BLACKLIST,20,0,N,,5,,20,21.6,46.4,74.4,132,218.4
+supplementaries:plunderer,0,5,,"champions:plagued, champions:reflective",BLACKLIST,24,0,N,,5,,24,25.92,55.68,89.28,158.4,262.08
+illagerinvasion:inquisitor,0,3,,"champions:reflective,champions:plagued",BLACKLIST,80,0,N,,3,,80,86.4,185.6,297.6,528,873.6
+irons_spellbooks:necromancer,0,5,,"champions:reflective,champions:plagued",BLACKLIST,25,0,N,,5,,25,27,58,93,165,273
+irons_spellbooks:archevoker,0,3,,"champions:reflective,champions:plagued",BLACKLIST,60,11,N,,3,,86.4,91.2,192,302.4,528,840
+irons_spellbooks:ice_spider,0,4,,"champions:reflective,champions:plagued",BLACKLIST,50,0,N,,4,,50,54,116,186,330,546
+irons_spellbooks:citadel_keeper,0,4,,"champions:reflective,champions:plagued",BLACKLIST,60,4,N,,4,,69.6,74.4,158.4,252,444,722.4
+,BOSSES,AND,MINIBOSSES,,,,,,,,,,,,,,
+minecraft:ender_dragon,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+minecraft:warden,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+minecraft:wither,1,1,,"champions:adaptable, champions:reflective",BLACKLIST,,,,,,,,,,,,
+alexsmobs:farseer,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+alexsmobs:warped_mosco,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+alexsmobs:void_worm,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+alexscaves:forsaken,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+alexscaves:luxtructosaurus,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+alexscaves:gum_worm,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+bosses_of_mass_destruction:gauntlet,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+bosses_of_mass_destruction:lich,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+bosses_of_mass_destruction:obsidilith,1,1,,"champions:reflective, champions:lively",BLACKLIST,,,,,,,,,,,,
+bosses_of_mass_destruction:void_blossom,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+born_in_chaos_v1:lord_pumpkinhead,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+born_in_chaos_v1:sir_pumpkinhead,1,1,,"champions:plagued, champions:reflective",BLACKLIST,,,,,,,,,,,,
+born_in_chaos_v1:krampus,1,1,,"champions:plagued, champions:reflective",BLACKLIST,,,,,,,,,,,,
+born_in_chaos_v1:missioner,1,1,,"champions:plagued, champions:reflective",BLACKLIST,,,,,,,,,,,,
+born_in_chaos_v1:nightmare_stalker,1,1,,"champions:plagued, champions:reflective",BLACKLIST,,,,,,,,,,,,
+born_in_chaos_v1:lifestealer,1,1,,"champions:plagued, champions:reflective",BLACKLIST,,,,,,,,,,,,
+cataclysm:amethyst_crab,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:ancient_remnant,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:aptrgangr,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:cindaria,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:clawdian,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:coral_golem,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:coralssus,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:hippocamtus,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:the_harbinger,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:the_prowler,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:ender_golem,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:ender_guardian,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:ignis,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:ignited_berserker,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:ignited_revenant,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:kobolediator,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:maledictus,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:modern_remnant,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:netherite_monstrosity,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:scylla,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:the_leviathan,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+cataclysm:wadjet,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mowziesmobs:frostmaw,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mowziesmobs:ferrous_wroughtnaut,1,1,,"champions:reflective,champions:plagued,champions:lively",BLACKLIST,,,,,,,,,,,,
+mowziesmobs:umvuthi,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mowziesmobs:sculptor,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mutantmonsters:mutant_creeper,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mutantmonsters:mutant_enderman,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mutantmonsters:mutant_skeleton,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+mutantmonsters:mutant_zombie,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:marid_unbound,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_breeze,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_strong_breeze,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_weak_breeze,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_elder_guardian,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_guardian,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_warden,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+occultism:possessed_witch,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+illagerinvasion:invoker,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,
+irons_spellbooks:dead_king,1,1,,"champions:reflective,champions:plagued",BLACKLIST,,,,,,,,,,,,

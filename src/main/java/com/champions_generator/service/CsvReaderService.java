@@ -16,18 +16,29 @@ import java.util.*;
 
 public class CsvReaderService {
 
-    public static final String CSV_PATH_MOB = "Damage_Armor_Threshold_Calcs_Mobs.csv";
+    public static final String CSV_PATH_MOB = "Champions Damage and Armor Threshold Calcs - Mobs.csv";
 
     public static final ObjectWriter writer = new ObjectMapper().writer().withDefaultPrettyPrinter();
+
+    public static final String NUMBER_REGEX = "-?\\d+";
 
     /**
      * Exceptions that have a hardcoded max rank. These are mobs such as summons.
      */
-    public static final Map<String, Integer> mobMaxRankExceptions = Map.of(
-            "minecraft:vex", 2,
-            "minecraft:silverfish", 2,
-            "occultism:wild_horde_silverfish", 2,
-            "rottencreatures:scarab", 2
+    public static final Map<String, Integer> mobMaxRankExceptions = Map.ofEntries(
+            Map.entry("minecraft:vex", 2),
+            Map.entry("minecraft:silverfish", 2),
+            Map.entry("occultism:wild_horde_silverfish", 2),
+            Map.entry("rottencreatures:scarab", 2),
+            Map.entry("born_in_chaos_v1:senor_pumpkin", 2),
+            Map.entry("born_in_chaos_v1:baby_spider", 2),
+            Map.entry("born_in_chaos_v1:maggot", 2),
+            Map.entry("born_in_chaos_v1:corpse_fly", 2),
+            Map.entry("born_in_chaos_v1:baby_skeleton", 2),
+            Map.entry("born_in_chaos_v1:bone_imp", 2),
+            Map.entry("born_in_chaos_v1:siamese_skeletonsright", 2),
+            Map.entry("born_in_chaos_v1:siamese_skeletonsleft", 2),
+            Map.entry("born_in_chaos_v1:spirit_guide_assistant", 2)
     );
 
     /**
@@ -44,16 +55,17 @@ public class CsvReaderService {
     private static void readCsvToEntitiesConfig(String fileName) {
         LinkedList<MobEntryRow> mobEntryRowSet = new LinkedList<>();
         try (CSVReader reader = new CSVReader(new FileReader("src/main/resources/" + fileName))) {
-            reader.skip(6); // skip headers
             String[] nextLine;
             while ((nextLine = reader.readNext()) != null) {
-                mobEntryRowSet.add(convertRowToMobEntryRow(nextLine));
+                if (isValidRow(nextLine)) {
+                    mobEntryRowSet.add(convertRowToMobEntryRow(nextLine));
+                }
             }
         } catch (IOException | CsvValidationException e) {
             e.printStackTrace();
         }
         mobEntryRowSet.forEach(System.out::println);
-        Path pathToChampionsEntities = Path.of("../config/champions_entities.toml");
+        Path pathToChampionsEntities = Path.of("../config/champions-entities.toml");
         try {
             Files.createDirectories(pathToChampionsEntities.getParent());
             StringBuilder contentBuilder = new StringBuilder();
@@ -62,7 +74,7 @@ public class CsvReaderService {
                 contentBuilder.append(mobEntry);
             }
             Files.write(pathToChampionsEntities, contentBuilder.toString().getBytes());
-            System.out.println("Wrote champions_entities in: " + pathToChampionsEntities.toAbsolutePath());
+            System.out.println("Wrote champions-entities in: " + pathToChampionsEntities.toAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -81,6 +93,18 @@ public class CsvReaderService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Asserts that Row will convert into a mob entry correctly.
+     * @param rowValues The CSV row
+     * @return true if necessary data present, false if even one missing.
+     */
+    private static boolean isValidRow(String[] rowValues) {
+        return StringUtils.isNotBlank(rowValues[0])
+                && StringUtils.isNotBlank(rowValues[1]) && rowValues[1].matches(NUMBER_REGEX)
+                && StringUtils.isNotBlank(rowValues[2]) && rowValues[2].matches(NUMBER_REGEX)
+                && StringUtils.isNotBlank(rowValues[5]);
     }
 
     /**

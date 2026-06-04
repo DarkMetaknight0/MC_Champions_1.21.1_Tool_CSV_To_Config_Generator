@@ -15,5 +15,7 @@ data\champions\tags\entity_type/allow_champions.json - The list of allowed champ
 # Overrides in code
 Supports overriding max rank for specific mobs. By default this is Silverfish and a couple other possible on-death spawns, and some summons like a Vex limited to rank 2 maximum. These will not impact the list itself; only the max rank specific IDs will map to, essentially overriding them through code rather than needing any "hard coding" in the spreadsheet. I recommend all math-based max ranks on the spreadsheet.
 
+You can also add universal affixes, whether presets or all affixLists universally (applied to all mobs). I recommend Infested at minimum, as Infested spawns ignore restrictions on Silverfish so it can lead to an infinite Infested loop and crash your game.
+
 [Example Spreadsheet Here](https://docs.google.com/spreadsheets/d/1Rv5-hfRvJ1aRjfpPCm2gPq7oFlsTEBoSP9QgvW6e98w/edit?usp=drivesdk)
 (File -> Make a Copy)

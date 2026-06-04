@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class CsvReaderService {
 
@@ -25,7 +26,8 @@ public class CsvReaderService {
     /**
      * Exceptions that have a hardcoded max rank. These are mobs such as summons.
      */
-    public static final Map<String, Integer> mobMaxRankExceptions = Map.ofEntries(
+    private static final boolean DO_MAX_RANK_EXCEPTIONS = true;
+    private static final Map<String, Integer> MOB_MAX_RANK_EXCEPTIONS = Map.ofEntries(
             Map.entry("minecraft:vex", 2),
             Map.entry("minecraft:silverfish", 2),
             Map.entry("occultism:wild_horde_silverfish", 2),
@@ -40,6 +42,25 @@ public class CsvReaderService {
             Map.entry("born_in_chaos_v1:siamese_skeletonsleft", 2),
             Map.entry("born_in_chaos_v1:spirit_guide_assistant", 2)
     );
+
+    /**
+     * Hardcoded universally added affixList. Use only if you're using exclusively BLACKLIST or WHITELIST.
+     * IMPORTANT: THESE MUST BE DOUBLE QUOTED.
+     */
+    private static final boolean DO_UNIVERSAL_AFFIX_LIST = true;
+    private static final Set<String> UNIVERSAL_AFFIX_LIST = Set.of(
+            "\"champions:plagued\"",
+            "\"champions:reflective\"",
+            "\"champions:shielding\"",
+            "\"champions:infested\""
+    );
+
+    /**
+     * Hardcoded universally added presetAffix. Use only if you want EVERY Champion to have this affix.
+     * IMPORTANT: THESE MUST BE DOUBLE QUOTED.
+     */
+    private static final boolean DO_UNIVERSAL_PRESET_AFFIXES = false;
+    private static final Set<String> UNIVERSAL_PRESET_AFFIX_LIST = Set.of();
 
     /**
      * Generates all mob JSON into a config format, from the logs.
@@ -111,16 +132,27 @@ public class CsvReaderService {
      * Ensures comma separated affix list returns correctly.
      * @return A separated by quotes list, e.g.
      * String "champions:knocking, champions:wounding"
-     * -> String "\"champions:knocking\", \"champions:wounding\""
+     * -> String "\"champions:knocking\", \"champions:wounding\"".
+     *
+     * Also handles universal affixes.
      */
-    private static List<String> convertAffixList(String rawAffixList) {
+    private static Set<String> convertAffixList(
+            String rawAffixList,
+            boolean doUniversalAffixes,
+            Set<String> universalAffixes
+    ) {
         if (StringUtils.isBlank(rawAffixList)) {
-            return new ArrayList<>();
+            return doUniversalAffixes ? universalAffixes : Collections.emptySet();
         }
-        return Arrays.stream(rawAffixList.split(","))
+        Set<String> configuredAffixList = Arrays.stream(rawAffixList.split(","))
                 .map(rawAffix -> StringUtils.replaceChars(rawAffix, " ", ""))
                 .map(s -> "\"" + s + "\"")
-                .toList();
+                .collect(Collectors.toSet());
+        if (doUniversalAffixes) {
+            configuredAffixList.addAll(universalAffixes);
+        }
+
+        return configuredAffixList;
     }
 
     /**
@@ -132,11 +164,11 @@ public class CsvReaderService {
         return MobEntryRow.builder()
                 .mobId(nextLine[0])
                 .minRank(Integer.parseInt(nextLine[1]))
-                .maxRank(mobMaxRankExceptions.containsKey(nextLine[0])
-                        ? mobMaxRankExceptions.get(nextLine[0])
+                .maxRank(DO_MAX_RANK_EXCEPTIONS && MOB_MAX_RANK_EXCEPTIONS.containsKey(nextLine[0])
+                        ? MOB_MAX_RANK_EXCEPTIONS.get(nextLine[0])
                         : Integer.parseInt(nextLine[2]))
-                .affixPresets(convertAffixList(nextLine[3]))
-                .affixList(convertAffixList(nextLine[4]))
+                .affixPresets(convertAffixList(nextLine[3], DO_UNIVERSAL_PRESET_AFFIXES, UNIVERSAL_PRESET_AFFIX_LIST))
+                .affixList(convertAffixList(nextLine[4], DO_UNIVERSAL_AFFIX_LIST, UNIVERSAL_AFFIX_LIST))
                 .affixListType(nextLine[5])
                 .build();
     }

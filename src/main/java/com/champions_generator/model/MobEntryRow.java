@@ -3,7 +3,7 @@ package com.champions_generator.model;
 import lombok.Builder;
 import lombok.Getter;
 
-import java.util.List;
+import java.util.Set;
 
 @Builder
 @Getter
@@ -11,8 +11,8 @@ public class MobEntryRow {
     private final String mobId;
     private final int minRank;
     private final int maxRank;
-    private final List<String> affixPresets;
-    private final List<String> affixList;
+    private final Set<String> affixPresets;
+    private final Set<String> affixList; // This is against naming convention, but that is what the JSON needs.
     private final String affixListType;
 
     @Override
